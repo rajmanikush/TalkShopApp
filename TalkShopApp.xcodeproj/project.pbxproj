@@ -12,18 +12,22 @@
 		FE019A4B2BEDFD9700215320 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A4A2BEDFD9700215320 /* PostView.swift */; };
 		FE019A4E2BEE00D900215320 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A4D2BEE00D900215320 /* ProfileViewModel.swift */; };
 		FE019A512BEE01C300215320 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A502BEE01C300215320 /* NetworkProtocol.swift */; };
-		FE019A532BEE623F00215320 /* feed_response.json in Resources */ = {isa = PBXBuildFile; fileRef = FE019A522BEE623F00215320 /* feed_response.json */; };
+		FE019A532BEE623F00215320 /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = FE019A522BEE623F00215320 /* feed.json */; };
 		FE019A552BEE666300215320 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A542BEE666300215320 /* FeedService.swift */; };
 		FE019A582BEE6ECD00215320 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A572BEE6ECD00215320 /* FeedViewModel.swift */; };
 		FE019A5A2BEF8F3E00215320 /* FeedMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A592BEF8F3E00215320 /* FeedMainView.swift */; };
 		FE019A5D2BEF927C00215320 /* UserSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A5C2BEF927C00215320 /* UserSectionView.swift */; };
 		FE019A5F2BEF929400215320 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A5E2BEF929400215320 /* NetworkImageView.swift */; };
+		FE019A632BEF9E3500215320 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = FE019A622BEF9E3500215320 /* profile.json */; };
+		FE019A662BEF9F0000215320 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A652BEF9F0000215320 /* ProfileService.swift */; };
+		FE019A682BEF9F1B00215320 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A672BEF9F1B00215320 /* Networking.swift */; };
+		FE019A6B2BEFEECA00215320 /* ProfileMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A6A2BEFEECA00215320 /* ProfileMainView.swift */; };
 		FEC8FFEB2BEDCD0D007ECDE5 /* TalkShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8FFEA2BEDCD0D007ECDE5 /* TalkShopApp.swift */; };
 		FEC8FFED2BEDCD0D007ECDE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8FFEC2BEDCD0D007ECDE5 /* HomeView.swift */; };
 		FEC8FFEF2BEDCD0F007ECDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC8FFEE2BEDCD0F007ECDE5 /* Assets.xcassets */; };
 		FEC8FFF22BEDCD0F007ECDE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC8FFF12BEDCD0F007ECDE5 /* Preview Assets.xcassets */; };
 		FEC8FFF92BEDD095007ECDE5 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8FFF82BEDD095007ECDE5 /* FeedView.swift */; };
-		FEC8FFFB2BEDD198007ECDE5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8FFFA2BEDD198007ECDE5 /* AccountView.swift */; };
+		FEC8FFFB2BEDD198007ECDE5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8FFFA2BEDD198007ECDE5 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,19 +37,23 @@
 		FE019A4A2BEDFD9700215320 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		FE019A4D2BEE00D900215320 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		FE019A502BEE01C300215320 /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
-		FE019A522BEE623F00215320 /* feed_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feed_response.json; sourceTree = "<group>"; };
+		FE019A522BEE623F00215320 /* feed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feed.json; sourceTree = "<group>"; };
 		FE019A542BEE666300215320 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		FE019A572BEE6ECD00215320 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		FE019A592BEF8F3E00215320 /* FeedMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMainView.swift; sourceTree = "<group>"; };
 		FE019A5C2BEF927C00215320 /* UserSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSectionView.swift; sourceTree = "<group>"; };
 		FE019A5E2BEF929400215320 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		FE019A622BEF9E3500215320 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
+		FE019A652BEF9F0000215320 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		FE019A672BEF9F1B00215320 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FE019A6A2BEFEECA00215320 /* ProfileMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainView.swift; sourceTree = "<group>"; };
 		FEC8FFE72BEDCD0D007ECDE5 /* TalkShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC8FFEA2BEDCD0D007ECDE5 /* TalkShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkShopApp.swift; sourceTree = "<group>"; };
 		FEC8FFEC2BEDCD0D007ECDE5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FEC8FFEE2BEDCD0F007ECDE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC8FFF12BEDCD0F007ECDE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEC8FFF82BEDD095007ECDE5 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		FEC8FFFA2BEDD198007ECDE5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		FEC8FFFA2BEDD198007ECDE5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +70,10 @@
 		FE019A4C2BEE00C500215320 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				FEC8FFFA2BEDD198007ECDE5 /* AccountView.swift */,
+				FE019A692BEF9F5D00215320 /* Model */,
+				FE019A642BEF9EEC00215320 /* API */,
+				FE019A6A2BEFEECA00215320 /* ProfileMainView.swift */,
+				FEC8FFFA2BEDD198007ECDE5 /* ProfileView.swift */,
 				FE019A4D2BEE00D900215320 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
@@ -72,7 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				FE019A502BEE01C300215320 /* NetworkProtocol.swift */,
-				FE019A522BEE623F00215320 /* feed_response.json */,
+				FE019A672BEF9F1B00215320 /* Networking.swift */,
+				FE019A522BEE623F00215320 /* feed.json */,
+				FE019A622BEF9E3500215320 /* profile.json */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -115,6 +128,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FE019A642BEF9EEC00215320 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FE019A652BEF9F0000215320 /* ProfileService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FE019A692BEF9F5D00215320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE019A482BEDFC8300215320 /* ProfileResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE019A6C2BEFFC6C00215320 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FEC8FFEC2BEDCD0D007ECDE5 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		FEC8FFDE2BEDCD0D007ECDE5 = {
 			isa = PBXGroup;
 			children = (
@@ -134,14 +171,13 @@
 		FEC8FFE92BEDCD0D007ECDE5 /* TalkShopApp */ = {
 			isa = PBXGroup;
 			children = (
-				FE019A4F2BEE019C00215320 /* Networking */,
 				FE019A472BEDF88600215320 /* Info.plist */,
 				FEC8FFEA2BEDCD0D007ECDE5 /* TalkShopApp.swift */,
-				FEC8FFEC2BEDCD0D007ECDE5 /* HomeView.swift */,
+				FE019A6C2BEFFC6C00215320 /* Home */,
 				FE019A562BEE666C00215320 /* Feed */,
 				FE019A4C2BEE00C500215320 /* Profile */,
 				FE019A4A2BEDFD9700215320 /* PostView.swift */,
-				FE019A482BEDFC8300215320 /* ProfileResponse.swift */,
+				FE019A4F2BEE019C00215320 /* Networking */,
 				FEC8FFEE2BEDCD0F007ECDE5 /* Assets.xcassets */,
 				FEC8FFF02BEDCD0F007ECDE5 /* Preview Content */,
 			);
@@ -215,7 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEC8FFF22BEDCD0F007ECDE5 /* Preview Assets.xcassets in Resources */,
-				FE019A532BEE623F00215320 /* feed_response.json in Resources */,
+				FE019A632BEF9E3500215320 /* profile.json in Resources */,
+				FE019A532BEE623F00215320 /* feed.json in Resources */,
 				FEC8FFEF2BEDCD0F007ECDE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE019A4B2BEDFD9700215320 /* PostView.swift in Sources */,
-				FEC8FFFB2BEDD198007ECDE5 /* AccountView.swift in Sources */,
+				FEC8FFFB2BEDD198007ECDE5 /* ProfileView.swift in Sources */,
 				FE019A462BEDF2F200215320 /* FeedResponse.swift in Sources */,
+				FE019A6B2BEFEECA00215320 /* ProfileMainView.swift in Sources */,
+				FE019A682BEF9F1B00215320 /* Networking.swift in Sources */,
 				FE019A492BEDFC8300215320 /* ProfileResponse.swift in Sources */,
 				FEC8FFED2BEDCD0D007ECDE5 /* HomeView.swift in Sources */,
 				FE019A582BEE6ECD00215320 /* FeedViewModel.swift in Sources */,
@@ -241,6 +280,7 @@
 				FEC8FFEB2BEDCD0D007ECDE5 /* TalkShopApp.swift in Sources */,
 				FE019A552BEE666300215320 /* FeedService.swift in Sources */,
 				FE019A5D2BEF927C00215320 /* UserSectionView.swift in Sources */,
+				FE019A662BEF9F0000215320 /* ProfileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

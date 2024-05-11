@@ -1,5 +1,5 @@
 //
-//  FeedViewModel.swift
+//  ProfileViewModel.swift
 //  TalkShopApp
 //
 //  Created by Rajmani Kushwaha on 10/05/24.
@@ -7,31 +7,31 @@
 
 import Foundation
 
-enum FeedUIState {
+enum ProfileUIState {
     case loading
-    case success(posts: [FeedModel])
+    case success(ProfileModel)
     case error(message: String)
 }
 
-final class FeedViewModel: ObservableObject {
+final class ProfileViewModel: ObservableObject {
     
-    private let feedService: FeedService
+    private let networkService: ProfileService
     
-    @Published var uiState: FeedUIState = .loading
+    @Published var uiState: ProfileUIState = .loading
     
-    init(feedService: FeedService = MockFeedService()) {
-        self.feedService = feedService
+    init(networkService: ProfileService = MockProfileService()) {
+        self.networkService = networkService
     }
     
     func didLoad() {
         uiState = .loading
         
-        feedService.getFeeds { [weak self] result in
+        networkService.getProfile(username: "") { [weak self] result in
             DispatchQueue.main.async { [weak self] in
                 guard let self else { return }
                 switch result {
-                case let .success(posts):
-                    uiState = .success(posts: posts)
+                case let .success(response):
+                    uiState = .success(response)
                 case let .failure(error):
                     uiState = .error(message: error.localizedDescription)
                 }

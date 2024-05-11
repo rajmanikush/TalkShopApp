@@ -13,35 +13,19 @@ protocol PostProtocol {
 }
 
 struct PostView: View {
-    
-    @State var posts: [PostProtocol]
-    
+    var posts: [PostProtocol]
+
     var body: some View {
-        LazyVStack {
-            ForEach(posts, id: \.postId) { post in
-                VStack {
-                    if let url = URL(string: post.thumbnailUrl) {
-                        AsyncImage(url: url)
-                            .aspectRatio(contentMode: .fill)
-                    }
-                    
+        GeometryReader { proxy in
+            LazyVGrid(columns: [
+                GridItem(.fixed(proxy.size.width/3)),
+                GridItem(.fixed(proxy.size.width/3)),
+                GridItem(.fixed(proxy.size.width/3))
+            ]) {
+                ForEach(posts, id: \.postId) { post in
+                    NetworkImageView(url: post.thumbnailUrl)
                 }
             }
         }
-        .frame(maxWidth: .infinity)
     }
-}
-
-#Preview {
-    PostView(posts: [
-        Post(postId: "1",
-             thumbnailUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-             videoURL: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
-              likes: 5),
-        
-        Post(postId: "2",
-             thumbnailUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg", videoURL: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-              likes: 5),
-        ]
-    )
 }

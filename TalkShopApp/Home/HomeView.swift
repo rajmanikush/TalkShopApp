@@ -13,7 +13,7 @@ struct HomeView: View {
             FeedMainView()
                 .tabItem { Label("Feed", systemImage: "house.fill") }
             
-            AccountView()
+            ProfileRootView()
                     .tabItem {
                         Label("Profile", systemImage: "person.crop.circle.fill")
                     }

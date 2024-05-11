@@ -14,14 +14,19 @@ struct NetworkImageView: View {
         AsyncImage(url: URL(string: url)) { phase in
             switch phase {
             case .empty:
-                Color.gray
+                ZStack {
+                    Color.gray
+                    ProgressView()
+                }
+            
             case let .success(image):
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
 
             case .failure:
-                Color.red
+                Image("placeholder")
+            
             @unknown default:
                 Color.gray
             }
