@@ -10,18 +10,23 @@ import AVKit
 
 struct VideoPlayerView: UIViewControllerRepresentable {
     let videoURL: URL
-
+    
+    init(videoURL: URL) {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithTransparentBackground()
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().barTintColor = .clear
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        self.videoURL = videoURL
+    }
+    
     func makeUIViewController(context: Context) -> AVPlayerViewController {
         let player = AVPlayer(url: videoURL)
         let playerViewController = AVPlayerViewController()
         playerViewController.player = player
         return playerViewController
     }
-
+    
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {}
 }
 
-
-#Preview {
-    VideoPlayerView(videoURL: URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4")!)
-}

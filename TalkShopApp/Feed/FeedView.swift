@@ -13,7 +13,7 @@ struct FeedView: View {
     var body: some View {
             LazyVStack {
                 ForEach(data, id: \.postId) { feed in
-                    NavigationLink(destination: VideoPlayerView(videoURL:  URL(string: feed.videoUrl)!)) {
+                    NavigationLink(destination: VideoContainerView(feed: feed)) {
                         VStack {
                             UserSectionView(model: UserSectionModel(username: feed.username,
                                                                     userProfileUrl: feed.userProfileUrl))
