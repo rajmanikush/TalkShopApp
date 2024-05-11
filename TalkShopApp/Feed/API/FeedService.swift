@@ -20,7 +20,7 @@ final class MockFeedService: FeedService {
     }
     
     func getFeeds(completion: @escaping (Result<[FeedModel], NetworkError>) -> Void) {
-        DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(500)) { [weak self] in
+        DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(800)) { [weak self] in
             guard let self else { return }
             guard let fileURL = Bundle.main.url(forResource: "feed", withExtension: "json") else {
                 completion(.failure(.serverError))
