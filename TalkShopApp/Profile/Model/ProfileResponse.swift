@@ -21,7 +21,7 @@ struct ProfileModel: Codable {
 }
 
 // MARK: - Post
-struct Post: Codable, PostProtocol {
+struct Post: Codable {
     var postId: String
     var thumbnailUrl: String
     let videoUrl: String

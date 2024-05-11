@@ -7,13 +7,8 @@
 
 import SwiftUI
 
-protocol PostProtocol {
-    var postId: String { get }
-    var thumbnailUrl: String { get }
-}
-
 struct PostView: View {
-    var posts: [PostProtocol]
+    var profile: ProfileModel
 
     var body: some View {
         GeometryReader { proxy in
@@ -22,8 +17,15 @@ struct PostView: View {
                 GridItem(.fixed(proxy.size.width/3)),
                 GridItem(.fixed(proxy.size.width/3))
             ]) {
-                ForEach(posts, id: \.postId) { post in
-                    NetworkImageView(url: post.thumbnailUrl)
+                ForEach(profile.posts, id: \.postId) { post in
+                    NavigationLink {
+                        VideoContainerView(model: .init(username: profile.username,
+                                                        userProfileUrl: profile.profilePictureUrl,
+                                                        videoUrl: post.videoUrl,
+                                                        likes: post.likes))
+                    } label: {
+                        NetworkImageView(url: post.thumbnailUrl)
+                    }
                 }
             }
         }

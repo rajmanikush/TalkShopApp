@@ -25,6 +25,7 @@
 		FE019A6E2BEFFF3900215320 /* LikeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A6D2BEFFF3900215320 /* LikeCellView.swift */; };
 		FE019A712BF0004B00215320 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A702BF0004B00215320 /* VideoPlayerView.swift */; };
 		FE019A732BF0136C00215320 /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A722BF0136C00215320 /* VideoContainerView.swift */; };
+		FE019A762BF016D500215320 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE019A752BF016D500215320 /* VideoModel.swift */; };
 		FEC8FFEB2BEDCD0D007ECDE5 /* TalkShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8FFEA2BEDCD0D007ECDE5 /* TalkShopApp.swift */; };
 		FEC8FFED2BEDCD0D007ECDE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC8FFEC2BEDCD0D007ECDE5 /* HomeView.swift */; };
 		FEC8FFEF2BEDCD0F007ECDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC8FFEE2BEDCD0F007ECDE5 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		FE019A6D2BEFFF3900215320 /* LikeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCellView.swift; sourceTree = "<group>"; };
 		FE019A702BF0004B00215320 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		FE019A722BF0136C00215320 /* VideoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
+		FE019A752BF016D500215320 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		FEC8FFE72BEDCD0D007ECDE5 /* TalkShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC8FFEA2BEDCD0D007ECDE5 /* TalkShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkShopApp.swift; sourceTree = "<group>"; };
 		FEC8FFEC2BEDCD0D007ECDE5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -162,10 +164,19 @@
 		FE019A6F2BF0001800215320 /* VideoView */ = {
 			isa = PBXGroup;
 			children = (
+				FE019A742BF016CC00215320 /* Model */,
 				FE019A702BF0004B00215320 /* VideoPlayerView.swift */,
 				FE019A722BF0136C00215320 /* VideoContainerView.swift */,
 			);
 			path = VideoView;
+			sourceTree = "<group>";
+		};
+		FE019A742BF016CC00215320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE019A752BF016D500215320 /* VideoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FEC8FFDE2BEDCD0D007ECDE5 = {
@@ -291,6 +302,7 @@
 				FEC8FFED2BEDCD0D007ECDE5 /* HomeView.swift in Sources */,
 				FE019A6E2BEFFF3900215320 /* LikeCellView.swift in Sources */,
 				FE019A582BEE6ECD00215320 /* FeedViewModel.swift in Sources */,
+				FE019A762BF016D500215320 /* VideoModel.swift in Sources */,
 				FE019A512BEE01C300215320 /* NetworkProtocol.swift in Sources */,
 				FE019A5F2BEF929400215320 /* NetworkImageView.swift in Sources */,
 				FE019A732BF0136C00215320 /* VideoContainerView.swift in Sources */,

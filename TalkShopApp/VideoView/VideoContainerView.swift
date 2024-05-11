@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VideoContainerView: View {
-    let feed: FeedModel
+    let model: VideoModel
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -27,13 +27,13 @@ struct VideoContainerView: View {
                 }
                 .padding()
                 
-                VideoPlayerView(videoURL: URL(string: feed.videoUrl)!)
+                VideoPlayerView(videoURL: URL(string: model.videoUrl)!)
             }
             
             VStack {
                 Spacer()
-                UserSectionView(model: UserSectionModel(username: feed.username,
-                                                        userProfileUrl: feed.userProfileUrl))
+                UserSectionView(model: UserSectionModel(username: model.username,
+                                                        userProfileUrl: model.userProfileUrl))
             }
             .foregroundColor(.white)
             .padding(.bottom)
@@ -43,11 +43,11 @@ struct VideoContainerView: View {
                 HStack {
                     Spacer()
                     VStack {
-                        if feed.likes > 0 {
+                        if model.likes > 0 {
                             Image("heart")
                                 .resizable()
                                 .frame(width: 24, height: 24)
-                            Text("\(feed.likes)")
+                            Text("\(model.likes)")
                                 .bold()
                                 .foregroundColor(.white)
                         } else {

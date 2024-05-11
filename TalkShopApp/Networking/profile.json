@@ -6,27 +6,27 @@
         "posts": [
             {
                 "postId": "post_id_1",
-                "videoUrl": "https://example.com/videos/video1.mp4",
+                "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
                 "thumbnail_url": "https://www.techsmith.com/blog/wp-content/uploads/2021/02/TSC-thumbnail-example-1024x576.png",
                 "likes": 56
             },
             {
                 "postId": "post_id_3",
-                "videoUrl": "https://example.com/videos/video3.mp4",
+                "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
                 "thumbnail_url": "https://marketplace.canva.com/EAFAMirCsX4/2/0/1600w/canva-purple-creative-livestream-youtube-thumbnail-X2eVuOzURSM.jpg",
-                "likes": 0
+                "likes": 2
             },
             {
                 "postId": "post_id_2",
-                "videoUrl": "https://example.com/videos/video3.mp4",
+                "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
                 "thumbnail_url": "https://templates.mediamodifier.com/64ad57d278a3d41dce812ee2/youtube-video-thumbnail-template-with-colorful-pattern-on-background.jpg",
                 "likes": 0
             },
             {
                 "postId": "post_id_4",
-                "videoUrl": "https://example.com/videos/video3.mp4",
+                "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
                 "thumbnail_url": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/youtube-video-thumbnail-template-design-a84765d11ef103aeef1ee7425ff83fc7_screen.jpg?ts=1621926450",
-                "likes": 0
+                "likes": 4
             }
         ]
     }

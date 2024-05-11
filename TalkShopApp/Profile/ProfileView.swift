@@ -29,7 +29,7 @@ struct ProfileView: View {
             }
             .padding(.leading)
             
-            PostView(posts: model.posts)
+            PostView(profile: model)
         }
     }
 }
