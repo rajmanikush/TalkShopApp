@@ -20,3 +20,10 @@ API Services: We currently use services that get the data from the local JSON fi
 Views: Created small and reusable components like   `NetworkImageView`, `UserSectionView` and `LikeCellView` 
 
 All the views support the light and dark modes.
+
+
+Future Scope
+- Create configurations to switch from mock response to server response to make data dynamic.
+- Created Loading views which we can improve and utilise shimmer for better UX.
+- Customised Error screen instead of showing the plain normal error message.
+- Vanilla AVPlay is used for video playing, which can be further customised for a better viewing experience.
