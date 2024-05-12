@@ -27,7 +27,7 @@ struct FeedView: View {
                         }
                         .padding(.bottom)
                     }
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                 }
             }
             .frame(maxWidth: .infinity)
